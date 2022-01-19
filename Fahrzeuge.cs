@@ -6,10 +6,17 @@ class Fahrzeuge{
   private double grundpreis;
   private double kilometerpreis;
   
+  
+  public Fahrzeug(string kennzeichen, double kilometerstand, int kapazität, double grundpreis, double kilometerpreis){
+    this.kennzeichen = kennzeichen;
+    this.kilometerstand = kilometerstand;
+    this.kapazität = kapazität;
+    this.grundpreis = kilometerpreis;
+  }
+  
   public String getKennzeichen(){
     return kennzeichen;
   }
-  
   public void setKennzeichen(string value){
     kennzeichen = value;
   }
@@ -17,7 +24,6 @@ class Fahrzeuge{
   public double getKilometerstand(){
     return kilometerstand;
   }
-  
   public void setKilometerstand(double value){
     kilometerstand = value;
   }
@@ -25,7 +31,6 @@ class Fahrzeuge{
   public int getKapazität(){
     return kapazität;
   }
-  
   public void setKapazität(int value){
     kapazität = value;
   }
@@ -33,7 +38,6 @@ class Fahrzeuge{
   public double getGrundpreis(){
     return grundpreis;
   }
-  
   public void setGrundpreis(double value){
     grundpreis = value;
   }
@@ -41,11 +45,9 @@ class Fahrzeuge{
   public double getKilometerpreis(){
     return kilometerpreis;
   }
-  
   public void setKilometerpreis(double value){
     kilometerpreis = value;
   }
-  
   
   public Fahrzeug(){
     kennzeichen = "PIZ-000";
