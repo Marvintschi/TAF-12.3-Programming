@@ -55,6 +55,16 @@ class Fahrzeuge{
     kilometerpreis = 0.40;
   }
   
-  
-
+  public double berechnePreis(double strecke){
+    kilometerstand += strecke;
+    double preis;
+    if(strecke <= 3){
+      preis = (stecke - 3.0) * kilometerpreis;
+      return preis;
+    }
+    else(){
+      preis = stecke + kilometerpreis;
+      return preis;
+    }
+    
 }
