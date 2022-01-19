@@ -14,6 +14,27 @@ class Fahrzeuge{
     this.grundpreis = kilometerpreis;
   }
   
+  public Fahrzeug(){
+    kennzeichen = "PIZ-000";
+    kilometerstand = 0.0;
+    kapazität = 15;
+    grundpreis = 2.0;
+    kilometerpreis = 0.40;
+  }
+  
+  public double berechnePreis(double strecke){
+    kilometerstand += strecke;
+    double preis;
+    if(strecke <= 3){
+      preis = (stecke - 3.0) * kilometerpreis;
+      return preis;
+    }
+    else(){
+      preis = stecke + kilometerpreis;
+      return preis;
+    }
+  }
+  
   public String getKennzeichen(){
     return kennzeichen;
   }
@@ -48,25 +69,5 @@ class Fahrzeuge{
   public void setKilometerpreis(double value){
     kilometerpreis = value;
   }
-  
-  public Fahrzeug(){
-    kennzeichen = "PIZ-000";
-    kilometerstand = 0.0;
-    kapazität = 15;
-    grundpreis = 2.0;
-    kilometerpreis = 0.40;
-  }
-  
-  public double berechnePreis(double strecke){
-    kilometerstand += strecke;
-    double preis;
-    if(strecke <= 3){
-      preis = (stecke - 3.0) * kilometerpreis;
-      return preis;
-    }
-    else(){
-      preis = stecke + kilometerpreis;
-      return preis;
-    }
     
 }
