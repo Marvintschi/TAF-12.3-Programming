@@ -44,6 +44,9 @@ class Fahrzeuge{
     if(strecke >= 3){
       stecke -= 3;
     }
+    else{
+      return grundpreis;
+    }
     double preis += grundpreis;
     preis = ((strecke/100)*verbrauch)*benzinPreis;
     return preis;
