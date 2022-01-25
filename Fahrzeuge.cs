@@ -5,6 +5,10 @@ class Fahrzeuge{
   private int kapazität;
   private double grundpreis;
   private double kilometerpreis;
+  public double benzinPreis = 1.87;
+  public double verbrauch;
+  public double tankinhalt;
+  public double tankvolumen;
   
   
   public Fahrzeug(string kennzeichen, double kilometerstand, int kapazität, double grundpreis, double kilometerpreis){
@@ -20,6 +24,7 @@ class Fahrzeuge{
     kapazität = 15;
     grundpreis = 2.0;
     kilometerpreis = 0.40;
+    this.verbrauch = 8.5;
   }
   
   public double berechnePreis(double strecke){
@@ -34,7 +39,22 @@ class Fahrzeuge{
       return preis;
     }
   }
-  //test
+  
+  public double berechnePreis2(double strecke){
+    if(strecke >= 3){
+      stecke -= 3;
+    }
+    double preis += grundpreis;
+    preis = ((strecke/100)*verbrauch)*benzinPreis;
+    return preis;
+    
+  }
+
+  public double vollTanken(){
+    double getankteLiter = tankvolumen-tankinhalt
+    tankinhalt = tankvolumen;
+    return getankteLiter;
+  }
   
   public String getKennzeichen(){
     return kennzeichen;
