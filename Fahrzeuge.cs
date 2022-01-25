@@ -34,6 +34,7 @@ class Fahrzeuge{
       return preis;
     }
   }
+  //test
   
   public String getKennzeichen(){
     return kennzeichen;
