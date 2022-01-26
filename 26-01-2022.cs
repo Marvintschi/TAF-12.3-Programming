@@ -7,12 +7,19 @@ namespace StringOps
 
     class Aufgaben
     {
-        public List<string> stringList = new List<string>() { "5,5 + 8", "19 % 5", "24,7 - 8,5", "5 * 6" };
+        public List<string> stringList = new List<string>() { "5.5 + 8", "19 % 5", "24.7 - 8.5", "5 * 6" };
         public int[] zahlen = new int[] { 3, 14, 7, 22, 19, 1, 46, 8, 55, 76 };
 
         /*
         Aufgabe 1: Schreibe eine Methode Berechne():void die die einzelnen Strings aus der stringListe ausliest, diese aufsplittet
         und die Rechnung und das jeweilige Ergebnis dazu ausgibt. */
+
+        public void berechne(){
+            if(stringList[0].contains('+')){
+                Console.WriteLine(stringList[0]);
+            }
+        
+        }
         
 
         
