@@ -30,19 +30,19 @@ namespace StringOps
 						double abc = a % b;
                         Console.WriteLine(abc);
                 }
-		if(result[1].Contains("-")){
+		        if(result[1].Contains("-")){
                     double a = Convert.ToDouble(result[0]);
 						double b = Convert.ToDouble(result[2]);
 						double abc = a / b;
                         Console.WriteLine(abc);
                 }
-		if(result[1].Contains("%")){
+		        if(result[1].Contains("%")){
                     double a = Convert.ToDouble(result[0]);
 						double b = Convert.ToDouble(result[2]);
 						double abc = a - b;
                         Console.WriteLine(abc);
                 }
-		if(result[1].Contains("*")){
+		        if(result[1].Contains("*")){
                     double a = Convert.ToDouble(result[0]);
 						double b = Convert.ToDouble(result[2]);
 						double abc = a * b;
