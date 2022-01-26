@@ -18,6 +18,14 @@ namespace StringOps
             if(stringList[0].contains('+')){
                 Console.WriteLine(stringList[0]);
             }
+
+            for(int i = 0; i <=3; i++){
+                String[] a = stringList[i];
+                String[] result = a.Split(' ')
+                foreach(string s in result){
+                    Console.WriteLine(s);
+                }
+            }
         
         }
         
