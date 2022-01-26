@@ -23,13 +23,7 @@ namespace StringOps
 						double b = Convert.ToDouble(result[2]);
 						double abc = a + b;
 						Console.WriteLine(abc);
-				}
-                if(result[1].Contains("%")){
-                    double a = Convert.ToDouble(result[0]);
-						double b = Convert.ToDouble(result[2]);
-						double abc = a % b;
-                        Console.WriteLine(abc);
-                }
+				} 
 		        if(result[1].Contains("-")){
                     double a = Convert.ToDouble(result[0]);
 						double b = Convert.ToDouble(result[2]);
@@ -52,12 +46,6 @@ namespace StringOps
             }
         
         }
-    
-        
-        
-
-        
-       
 
         /*Aufgabe2: Schreibe ein Programm welches solange einzelne 
          * Worte einliest und zu einem String zusammenfügt bis die Eingabe 
