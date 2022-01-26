@@ -14,20 +14,21 @@ namespace StringOps
         Aufgabe 1: Schreibe eine Methode Berechne():void die die einzelnen Strings aus der stringListe ausliest, diese aufsplittet
         und die Rechnung und das jeweilige Ergebnis dazu ausgibt. */
 
-        public void berechne(){
-            if(stringList[0].contains('+')){
-                Console.WriteLine(stringList[0]);
-            }
+        public void Main(){
 
             for(int i = 0; i <=3; i++){
-                String[] a = stringList[i];
-                String[] result = a.Split(' ')
-                foreach(string s in result){
-                    Console.WriteLine(s);
-                }
+                String[] result = stringList[i].Split(' ');
+                if(result[1].Contains("+")){
+						double a = Convert.ToDouble(result[0]);
+						double b = Convert.ToDouble(result[2]);
+						double abc = a + b;
+						Console.WriteLine(abc);
+					}
             }
         
         }
+    
+        
         
 
         
