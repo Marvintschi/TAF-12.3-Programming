@@ -15,37 +15,34 @@ namespace StringOps
         und die Rechnung und das jeweilige Ergebnis dazu ausgibt. */
 
         public void Main(){
-
             for(int i = 0; i <=3; i++){
                 String[] result = stringList[i].Split(' ');
 		    for(int i = 0; i <=3; i++){
-			    if(result[1].Contains("-")){
-                    double a = Convert.ToDouble(result[0]);
-						double b = Convert.ToDouble(result[2]);
-						double abc = a / b;
-                        Console.WriteLine(abc);
-                }
+			if(result[1].Contains("-")){
+                   		double a = Convert.ToDouble(result[0]);
+				double b = Convert.ToDouble(result[2]);
+				double abc = a / b;
+                        	Console.WriteLine(abc);
+               		}
 		        if(result[1].Contains("%")){
-                    double a = Convert.ToDouble(result[0]);
-						double b = Convert.ToDouble(result[2]);
-						double abc = a - b;
-                        Console.WriteLine(abc);
-                }
+                    		double a = Convert.ToDouble(result[0]);
+				double b = Convert.ToDouble(result[2]);
+				double abc = a - b;
+                        	Console.WriteLine(abc);
+                	}
 		        if(result[1].Contains("*")){
-                    double a = Convert.ToDouble(result[0]);
-						double b = Convert.ToDouble(result[2]);
-						double abc = a * b;
-                        Console.WriteLine(abc);
-                }   
-		if(result[1].Contains("+")){
-						double a = Convert.ToDouble(result[0]);
-						double b = Convert.ToDouble(result[2]);
-						double abc = a + b;
-						Console.WriteLine(abc);
-				} 
-		    }
-		        
-       
+                    		double a = Convert.ToDouble(result[0]);
+				double b = Convert.ToDouble(result[2]);
+				double abc = a * b;
+                   		Console.WriteLine(abc);
+                	}   
+			if(result[1].Contains("+")){
+				double a = Convert.ToDouble(result[0]);
+				double b = Convert.ToDouble(result[2]);
+				double abc = a + b;
+				Console.WriteLine(abc);
+			} 
+		    }        
             }
         
         }
