@@ -53,8 +53,36 @@ namespace StringOps
          * Falls der eingelesene String dabei „Corona“ heißt, soll er nicht 
          * an den Ausgabestring angefügt werden (continue).*/
         
+        public void Aufgabe2(){
+            Console.WriteLine("Aufgabe 2");
+            bool done = false;
+            string strings = "";
+            while(!done){
+                string word = Console.ReadLine();
+                Console.WriteLine(word);
+                switch(word){
+                    case "Corona":
+                        continue;
+                    case "Ende":
+                        done = true;
+                        break;
+                    default:
+                        string += word;
+                        break;
+                }
+                Console.WriteLine(strings);
+            }
+        }
+
+
         
         /*Aufgabe 3: gib alle geraden Zahlen aus dem Array zahlen aus.*/
+
+        public void aufgabe3(){
+            foreach(int b in zahlen){
+                if (b%)
+            }
+        }
 
     }
 
