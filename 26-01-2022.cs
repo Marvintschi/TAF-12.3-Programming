@@ -80,7 +80,9 @@ namespace StringOps
 
         public void aufgabe3(){
             foreach(int b in zahlen){
-                if (b%)
+                if (b % 2 != 1){
+                    Console.WriteLine(b);
+                }
             }
         }
 
