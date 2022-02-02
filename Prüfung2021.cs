@@ -84,8 +84,8 @@ namespace StringOps
 
         public double aufgabe18(){
             int[] temperaturen = temperatursensor.getTemperaturen();
-            temperaturen.Sort();
-            return temperaturen[0];
+            Array.Sort(temperaturen);
+            return temperaturen[temperaturen.Lenght()];
         }
     }
 }
