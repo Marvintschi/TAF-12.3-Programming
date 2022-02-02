@@ -87,5 +87,9 @@ namespace StringOps
             Array.Sort(temperaturen);
             return temperaturen[temperaturen.Lenght()];
         }
+
+        objekt sender
+
+        Button btn = (Button) sender;
     }
 }
