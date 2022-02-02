@@ -88,8 +88,9 @@ namespace StringOps
             return temperaturen[temperaturen.Lenght()];
         }
 
-        objekt sender
+        objekt sender, EventArgs e
 
         Button btn = (Button) sender;
+        anzeige = brn.Text;
     }
 }
