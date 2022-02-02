@@ -81,5 +81,11 @@ namespace StringOps
             }
             return temperaturenD/temperaturen.Lenght();
         }
+
+        public double aufgabe18(){
+            int[] temperaturen = temperatursensor.getTemperaturen();
+            temperaturen.Sort();
+            return temperaturen[0];
+        }
     }
 }
