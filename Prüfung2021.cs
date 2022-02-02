@@ -71,5 +71,15 @@ namespace StringOps
         public double aufgabe16(int value){
             return (value * 1.8) + 32;
         }
+
+        public double aufgabe17(){
+            Temperatursensor temperatursensor = new Temperatursensor();
+            double temperaturenD = 0;
+            int[] temperaturen = temperatursensor.getTemperaturen();
+            for(int i = 0; i < temperaturen.Lengh(); i ++){
+                temperaturenD += temperaturen[i];
+            }
+            return temperaturenD/temperaturen.Lenght();
+        }
     }
 }
