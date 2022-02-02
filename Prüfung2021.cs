@@ -52,5 +52,24 @@ namespace StringOps
                 }
             }
         }
+
+        public void aufgabe15(){
+            Motor motor = new Motor();
+            string Status = motor.getStatus();
+            string[] rückgabe = Status.Split(':', '-');
+            //Ölstand prüfen
+            if(Convert.ToInt32(rückgabe[1]) < 30){
+                motor.schalteAus();
+            }
+            //Wasserstand prüfen
+            if(Convert.ToInt32(rückgabe[3]) < 15){
+                motor.schalteAus();
+            }
+
+        }
+
+        public double aufgabe16(int value){
+            return (value * 1.8) + 32;
+        }
     }
 }
